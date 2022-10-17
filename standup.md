@@ -1,5 +1,6 @@
 ## Standup Notes
 Meeting Date: 10/16/2022
+
 Meeting Location: zoom
 
 Member name:
