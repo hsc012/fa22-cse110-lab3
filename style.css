@@ -1,0 +1,95 @@
+/* Query based on screen width */
+@media screen{
+    /* Background color of all elements */
+    *{
+        background-color: rgb(212, 197, 248);
+    }
+
+    /* Size and position of the body */
+    body {
+        height: 30cm;
+        width: 200mm;
+        max-width:fit-content;
+        min-width:auto;
+        position: relative;
+    }
+
+    /* Title format */
+    h1 {
+        color: black;
+        text-decoration: underline;
+        text-align: left;
+        margin: auto;
+        padding-left: 5%;
+        border: 0.5px solid white;
+    }
+
+    /* Sub-headers format */
+    h2, h3 {
+        color: #355;
+        display: block;
+        margin: 25px 25px 25px 25px;
+        padding: 5px 5px 5px 5px; 
+    }
+
+    /* Paragraph format */
+    p {
+        font-family: verdana;
+        font-size: 12px;
+        display: inline;
+        position: sticky;
+        margin-left: 5%;
+    }
+
+    /* Notes sections of the meeting table when mouse hovers over them */
+    .Notes:hover {
+        font-size: 0.7em;
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Sub-headers when mouse clicks on them */
+    #subsection:active {
+        font-size: 1.2rem;
+    }
+
+    [attribute=Comments] {
+        display: grid;
+    }
+
+    /* Table format */
+    table {
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 700px 70px 70px 70px;
+        grid-template-rows: 200px 50px 50px 50px;
+        grid-area: none;
+    }
+    table th {
+        color: green;
+    }
+
+    /* Unfinished business + finished business formats */
+    div {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       flex-flow: column wrap;
+    }
+    div > h3 {
+        background-color: rgb(245, 234, 244);
+    }
+    div + h2 {
+        color: darkblue;
+    }
+    div ~ h2 {
+        background-color: lavender;
+    }
+    div.heading {
+        color: rgb(78, 26, 78);
+    }
+}
