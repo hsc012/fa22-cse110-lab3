@@ -87,7 +87,7 @@
         color: darkblue;
     }
     div ~ h2 {
-        background-color: lavender;
+        background-color: rgb(183, 183, 222);
     }
     div.heading {
         color: rgb(78, 26, 78);
